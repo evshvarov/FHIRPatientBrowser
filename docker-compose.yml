@@ -1,12 +1,7 @@
 version: '3.6'
 services:
-  iris:
-    build: 
-      context: .
-      dockerfile: Dockerfile
+  web:
+    build: .
     restart: always
     ports: 
       - 80:80
-      - 8000:8000
-    volumes:
-            - ./:/irisdev/app
